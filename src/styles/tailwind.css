@@ -1,0 +1,27 @@
+:root {
+    --primary: #334155;
+    --secondary: rgb(76, 79, 85);
+}
+
+@tailwind base;
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 14px;
+}
+
+@tailwind components;
+
+@tailwind utilities;
